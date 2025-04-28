@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizSprint - AI Game</title>
+  <link href="/src/styles.css" rel="stylesheet">
+</head>
+<body class="bg-blue-50 min-h-screen flex flex-col items-center justify-center p-4">
+
+  <div id="app" class="text-center">
+    <h1 class="text-4xl font-bold mb-6">QuizSprint 🚀</h1>
+
+    <div id="home-screen">
+      <input type="text" id="topic" class="border p-2 mb-2 w-full" placeholder="Enter Topic (e.g., General IT)">
+      <input type="number" id="numQuestions" class="border p-2 mb-2 w-full" placeholder="Number of Questions (e.g., 5)" min="1" max="20">
+      <input type="number" id="timerPerQuestion" class="border p-2 mb-4 w-full" placeholder="Seconds per Question (default 5)" min="5" max="30">
+
+      <button id="create-room" class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded">Create Room</button>
+    </div>
+
+    <div id="game-screen" class="hidden">
+      <h2 id="question" class="text-2xl font-semibold mb-4"></h2>
+      <input type="text" id="answer" class="border p-2 mb-4 w-full" placeholder="Your Answer..." autofocus>
+
+      <div id="players" class="text-left mt-6"></div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
