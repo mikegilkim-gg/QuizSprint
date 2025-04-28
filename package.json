@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "socket.io-client": "^4.7.2",
-    "puter.js": "^0.2.7"
   },
   "devDependencies": {
     "vite": "^4.0.0",
